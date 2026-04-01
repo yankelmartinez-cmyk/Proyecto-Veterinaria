@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Veterinaria.Api.Domain
+namespace Veterinaria.Api.Domain.Entities
 {
     
     public class Mascota

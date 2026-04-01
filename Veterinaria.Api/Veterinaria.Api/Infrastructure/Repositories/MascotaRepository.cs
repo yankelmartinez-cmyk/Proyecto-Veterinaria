@@ -1,5 +1,4 @@
-﻿
-using Veterinaria.Api.Domain.Entities;
+﻿using Veterinaria.Api.Domain.Entities;
 using Veterinaria.Api.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 

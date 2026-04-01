@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\infrastructure\\repositories\\mascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\infrastructure\\repositories\\mascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\controllers\\mascotascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\controllers\\mascotascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\domain\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\domain\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\owner\\desktop\\poo 2026 fabiola\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\infrastructure\\data\\veterinariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\infrastructure\\data\\veterinariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +43,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\appsettings.json",
+              "RelativeToolTip": "Veterinaria.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-01T19:35:02.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VeterinariaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Data\\VeterinariaDbContext.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Infrastructure\\Data\\VeterinariaDbContext.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Data\\VeterinariaDbContext.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Infrastructure\\Data\\VeterinariaDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:05:07.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Program.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:58:53.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MascotasController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Controllers\\MascotasController.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Controllers\\MascotasController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Controllers\\MascotasController.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Controllers\\MascotasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:45:30.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MascotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Repositories\\MascotaRepository.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Infrastructure\\Repositories\\MascotaRepository.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Repositories\\MascotaRepository.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Infrastructure\\Repositories\\MascotaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:36:31.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Mascota.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Domain\\Mascota.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Domain\\Mascota.cs",
               "ToolTip": "C:\\Users\\Owner\\Desktop\\POO 2026 Fabiola\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Domain\\Mascota.cs",
               "RelativeToolTip": "Veterinaria.Api\\Domain\\Mascota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T18:32:53.735Z",
               "EditorCaption": ""
