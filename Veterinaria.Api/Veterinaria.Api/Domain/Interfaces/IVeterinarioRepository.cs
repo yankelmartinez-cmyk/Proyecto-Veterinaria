@@ -4,10 +4,10 @@ namespace Veterinaria.Api.Domain.Interfaces
 {
     public interface IVeterinarioRepository
     {
-        Task<List<Veterinario>> GetAllAsync();
+        Task<IEnumerable<Veterinario>> GetAllAsync();
         Task<Veterinario?> GetByIdAsync(int id);
-        Task AddAsync(Veterinario veterinario);
-        Task UpdateAsync(Veterinario veterinario);
-        Task DeleteAsync(int id);
+        Task<Veterinario> AddAsync(Veterinario veterinario);
+        Task<Veterinario?> UpdateAsync(int id, Veterinario veterinario);
+        Task<bool> DeleteAsync(int id);
     }
 }
