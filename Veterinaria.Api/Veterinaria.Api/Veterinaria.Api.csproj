@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\AppServices\" />
-    <Folder Include="Application\DomainServices\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
