@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Veterinaria.Api.Domain.Entities;
+using Veterinaria.Api.Infrastructure.Data.Models;
 
 namespace Veterinaria.Api.Infrastructure.Data
 {
@@ -15,7 +16,7 @@ namespace Veterinaria.Api.Infrastructure.Data
 
         // compañeros, agregen sus tablas aqui.
         // public DbSet<Mascota> Mascotas { get; set; }
-        // public DbSet<Veterinario> Veterinarios { get; set; }
+           public DbSet<Veterinario> Veterinarios { get; set; }
         // public DbSet<Cliente> Clientes { get; set; }
         // public DbSet<TipoMascota> TiposMascota { get; set; }
     }
