@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Veterinaria.Api.Infrastructure.Data.Models;
+using Veterinaria.Api.Domain.Entities;
 using Veterinaria.Api.Infrastructure.Data.Repositories;
 
 namespace Veterinaria.Api.Controllers

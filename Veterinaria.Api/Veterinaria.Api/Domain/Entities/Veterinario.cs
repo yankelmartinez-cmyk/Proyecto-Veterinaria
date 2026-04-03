@@ -1,4 +1,4 @@
-﻿namespace Veterinaria.Api.Infrastructure.Data.Models
+﻿namespace Veterinaria.Api.Domain.Entities
 {
     public class Veterinario
     {

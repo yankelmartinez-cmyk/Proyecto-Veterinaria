@@ -18,7 +18,7 @@
   <ItemGroup>
     <Folder Include="Application\AppServices\" />
     <Folder Include="Application\DomainServices\" />
-    <Folder Include="Domain\Interfaces\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

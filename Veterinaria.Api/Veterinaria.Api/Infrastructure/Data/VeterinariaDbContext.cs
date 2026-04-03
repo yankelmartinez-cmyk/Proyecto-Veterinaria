@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Veterinaria.Api.Domain.Entities;
-using Veterinaria.Api.Infrastructure.Data.Models;
 
 namespace Veterinaria.Api.Infrastructure.Data
 {

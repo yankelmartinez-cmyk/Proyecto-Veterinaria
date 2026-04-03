@@ -1,9 +1,10 @@
-﻿using Veterinaria.Api.Infrastructure.Data.Models;
+﻿using Veterinaria.Api.Domain.Entities;
+using Veterinaria.Api.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Veterinaria.Api.Infrastructure.Data.Repositories
 {
-    public class VeterinarioRepository
+    public class VeterinarioRepository : IVeterinarioRepository
     {
         private readonly VeterinariaDbContext _context;
 
