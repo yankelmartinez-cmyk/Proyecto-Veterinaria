@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\application\\appservices\\veterinarioappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\application\\appservices\\veterinarioappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\infrastructure\\repositories\\veterinariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\infrastructure\\repositories\\veterinariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\domain\\entities\\veterinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\domain\\entities\\veterinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\domain\\interfaces\\iveterinariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\application\\domainservices\\veterinariodomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\application\\domainservices\\veterinariodomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\domain\\entities\\veterinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\domain\\entities\\veterinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\application\\appservices\\veterinarioappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|solutionrelative:veterinaria.api\\application\\appservices\\veterinarioappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D64003-36DA-D84B-BF03-E36411F2D5C2}|Veterinaria.Api\\Veterinaria.Api.csproj|c:\\users\\user\\proyecto-veterinaria\\veterinaria.api\\veterinaria.api\\infrastructure\\data\\veterinariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,20 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VeterinarioDomainService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
-              "RelativeDocumentMoniker": "Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
-              "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
-              "RelativeToolTip": "Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T21:56:16.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IVeterinarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Domain\\Interfaces\\IVeterinarioRepository.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Domain\\Interfaces\\IVeterinarioRepository.cs",
@@ -63,34 +50,57 @@
               "RelativeToolTip": "Veterinaria.Api\\Domain\\Interfaces\\IVeterinarioRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T19:29:16.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T19:29:16.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Veterinario.cs",
               "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Domain\\Entities\\Veterinario.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Domain\\Entities\\Veterinario.cs",
               "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Domain\\Entities\\Veterinario.cs",
               "RelativeToolTip": "Veterinaria.Api\\Domain\\Entities\\Veterinario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T04:04:23.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T04:04:23.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VeterinarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Repositories\\VeterinarioRepository.cs",
               "RelativeDocumentMoniker": "Veterinaria.Api\\Infrastructure\\Repositories\\VeterinarioRepository.cs",
               "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Infrastructure\\Repositories\\VeterinarioRepository.cs",
               "RelativeToolTip": "Veterinaria.Api\\Infrastructure\\Repositories\\VeterinarioRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwCgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T04:09:07.652Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VeterinarioAppService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
+              "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T21:54:51.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VeterinarioDomainService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
+              "RelativeDocumentMoniker": "Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
+              "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
+              "RelativeToolTip": "Veterinaria.Api\\Application\\DomainServices\\VeterinarioDomainService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T21:56:16.474Z"
             },
             {
               "$type": "Document",
@@ -103,18 +113,6 @@
               "ViewState": "AgIAABYAAAAAAAAAAAA5wCYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T04:26:09.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VeterinarioAppService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
-              "RelativeDocumentMoniker": "Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
-              "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
-              "RelativeToolTip": "Veterinaria.Api\\Application\\AppServices\\VeterinarioAppService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T21:54:51.011Z"
             },
             {
               "$type": "Document",

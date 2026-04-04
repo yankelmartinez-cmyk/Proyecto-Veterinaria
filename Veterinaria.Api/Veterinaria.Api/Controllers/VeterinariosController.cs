@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Veterinaria.Api.Application.AppServices;
 using Veterinaria.Api.Domain.Entities;
-using Veterinaria.Api.Infrastructure.Data.Repositories;
 
 namespace Veterinaria.Api.Controllers
 {
@@ -8,44 +8,43 @@ namespace Veterinaria.Api.Controllers
     [Route("api/[controller]")]
     public class VeterinariosController : ControllerBase
     {
-        private readonly VeterinarioRepository _repo;
+        private readonly VeterinarioAppService _service;
 
-        public VeterinariosController(VeterinarioRepository repo)
+        public VeterinariosController(VeterinarioAppService service)
         {
-            _repo = repo;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
-            => Ok(await _repo.GetAllAsync());
+            => Ok(await _service.GetAllAsync());
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var v = await _repo.GetByIdAsync(id);
+            var v = await _service.GetByIdAsync(id);
             return v is null ? NotFound() : Ok(v);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(Veterinario veterinario)
         {
-            await _repo.AddAsync(veterinario);
-            return CreatedAtAction(nameof(GetById), new { id = veterinario.Id }, veterinario);
+            var creado = await _service.AddAsync(veterinario);
+            return CreatedAtAction(nameof(GetById), new { id = creado.Id }, creado);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Veterinario veterinario)
         {
-            if (id != veterinario.Id) return BadRequest();
-            await _repo.UpdateAsync(veterinario);
-            return NoContent();
+            var actualizado = await _service.UpdateAsync(id, veterinario);
+            return actualizado is null ? NotFound() : Ok(actualizado);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _repo.DeleteAsync(id);
-            return NoContent();
+            var resultado = await _service.DeleteAsync(id);
+            return resultado ? Ok() : NotFound();
         }
     }
 }

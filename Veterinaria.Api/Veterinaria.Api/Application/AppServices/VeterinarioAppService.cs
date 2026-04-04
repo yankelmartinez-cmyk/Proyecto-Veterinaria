@@ -12,19 +12,19 @@ namespace Veterinaria.Api.Application.AppServices
             _repo = repo;
         }
 
-        public async Task<List<Veterinario>> GetAllAsync()
+        public async Task<IEnumerable<Veterinario>> GetAllAsync()
             => await _repo.GetAllAsync();
 
         public async Task<Veterinario?> GetByIdAsync(int id)
             => await _repo.GetByIdAsync(id);
 
-        public async Task AddAsync(Veterinario veterinario)
+        public async Task<Veterinario> AddAsync(Veterinario veterinario)
             => await _repo.AddAsync(veterinario);
 
-        public async Task UpdateAsync(Veterinario veterinario)
-            => await _repo.UpdateAsync(veterinario);
+        public async Task<Veterinario?> UpdateAsync(int id, Veterinario veterinario)
+            => await _repo.UpdateAsync(id, veterinario);
 
-        public async Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
             => await _repo.DeleteAsync(id);
     }
 }
