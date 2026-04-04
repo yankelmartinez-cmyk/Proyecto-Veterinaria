@@ -50,7 +50,8 @@
               "RelativeToolTip": "Veterinaria.Api\\Domain\\Entities\\Veterinario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T04:04:23.879Z"
+              "WhenOpened": "2026-04-03T04:04:23.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +87,7 @@
               "RelativeDocumentMoniker": "Veterinaria.Api\\Controllers\\VeterinariosController.cs",
               "ToolTip": "C:\\Users\\user\\Proyecto-Veterinaria\\Veterinaria.Api\\Veterinaria.Api\\Controllers\\VeterinariosController.cs",
               "RelativeToolTip": "Veterinaria.Api\\Controllers\\VeterinariosController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAmwDEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T04:26:09.391Z",
               "EditorCaption": ""
