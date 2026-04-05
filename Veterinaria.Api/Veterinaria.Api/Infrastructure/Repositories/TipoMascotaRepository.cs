@@ -16,17 +16,23 @@ namespace Veterinaria.Api.Infrastructure.Repositories
 
         public async Task<IEnumerable<TipoMascota>> GetAllAsync()
         {
-            return await _context.TiposMascota.ToListAsync();
+            return await _context.TiposMascota
+                .Where(t => t.Activo)
+                .ToListAsync();
         }
 
         public async Task<TipoMascota?> GetByIdAsync(int id)
         {
-            return await _context.TiposMascota.FindAsync(id);
+            return await _context.TiposMascota
+                .FirstOrDefaultAsync(t => t.Id == id && t.Activo);
         }
 
         public async Task<TipoMascota> CreateAsync(TipoMascota tipoMascota)
         {
-            _context.TiposMascota.Add(tipoMascota);
+            tipoMascota.FechaCreacion = DateTime.Now;
+            tipoMascota.Activo = true;
+
+            await _context.TiposMascota.AddAsync(tipoMascota);
             await _context.SaveChangesAsync();
             return tipoMascota;
         }
@@ -34,10 +40,10 @@ namespace Veterinaria.Api.Infrastructure.Repositories
         public async Task<TipoMascota?> UpdateAsync(int id, TipoMascota tipoMascota)
         {
             var existente = await _context.TiposMascota.FindAsync(id);
-            if (existente == null) return null;
+            if (existente == null || !existente.Activo) return null;
 
             existente.Nombre = tipoMascota.Nombre;
-            existente.Activo = tipoMascota.Activo;
+            existente.Descripcion = tipoMascota.Descripcion;
 
             await _context.SaveChangesAsync();
             return existente;
@@ -46,9 +52,9 @@ namespace Veterinaria.Api.Infrastructure.Repositories
         public async Task<bool> DeleteAsync(int id)
         {
             var tipoMascota = await _context.TiposMascota.FindAsync(id);
-            if (tipoMascota == null) return false;
+            if (tipoMascota == null || !tipoMascota.Activo) return false;
 
-            _context.TiposMascota.Remove(tipoMascota);
+            tipoMascota.Activo = false;
             await _context.SaveChangesAsync();
             return true;
         }
