@@ -2,20 +2,22 @@ using Microsoft.EntityFrameworkCore;
 using Veterinaria.Api.Infrastructure.Data;
 using Veterinaria.Api.Infrastructure.Repositories;
 using Veterinaria.Api.Application.AppServices;
-
+using Veterinaria.Api.Application.DomainServices;
+using Veterinaria.Api.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 // Registro del Repositorio para la Inyección de Dependencias
 builder.Services.AddDbContext<VeterinariaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
-builder.Services.AddScoped<MascotaRepository>();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddScoped<IMascotaRepository, MascotaRepository>();
 builder.Services.AddScoped<MascotaAppService>();
+builder.Services.AddScoped<MascotaDomainService>();
 
 var app = builder.Build();
 
