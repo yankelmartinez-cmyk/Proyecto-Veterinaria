@@ -1,15 +1,16 @@
-using Microsoft.EntityFrameworkCore;
 using Veterinaria.Api.Application.AppServices;
 using Veterinaria.Api.Application.DomainServices;
 using Veterinaria.Api.Domain.Interfaces;
-using Veterinaria.Api.Infrastructure.Data;
-using Veterinaria.Api.Infrastructure.Repositories;
+using Veterinaria.Api.Infrastructure.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<ClienteDomainService>();
+builder.Services.AddScoped<ClienteAppService>();
 
 // Registrar DbContext
 builder.Services.AddDbContext<VeterinariaDbContext>(options =>
