@@ -14,7 +14,6 @@ namespace Veterinaria.Api.Infrastructure.Repositories
             _context = context;
         }
 
-        // GET - Listar todas las mascotas activas
         public async Task<IEnumerable<Mascota>> GetAllAsync()
         {
             return await _context.Mascotas
@@ -22,35 +21,43 @@ namespace Veterinaria.Api.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        // GET por ID - Obtener una mascota por su id
         public async Task<Mascota?> GetByIdAsync(int id)
         {
-            return await _context.Mascotas.FindAsync(id);
+            return await _context.Mascotas
+                .FirstOrDefaultAsync(m => m.Id == id && m.Activo);
         }
 
-        // POST - Agregar una nueva mascota
-        public async Task AddAsync(Mascota mascota)
+        public async Task<Mascota> CreateAsync(Mascota mascota)
         {
+            mascota.FechaCreacion = DateTime.Now;
+            mascota.Activo = true;
             await _context.Mascotas.AddAsync(mascota);
             await _context.SaveChangesAsync();
+            return mascota;
         }
 
-        // PUT - Actualizar una mascota existente
-        public async Task UpdateAsync(Mascota mascota)
+        public async Task<Mascota?> UpdateAsync(int id, Mascota mascota)
         {
-            _context.Mascotas.Update(mascota);
+            var existing = await _context.Mascotas.FindAsync(id);
+            if (existing == null || !existing.Activo) return null;
+
+            existing.Nombre = mascota.Nombre;
+            existing.FechaNacimiento = mascota.FechaNacimiento;
+            existing.IdCliente = mascota.IdCliente;
+            existing.IdTipoMascota = mascota.IdTipoMascota;
+
             await _context.SaveChangesAsync();
+            return existing;
         }
 
-        // DELETE - Inactivar una mascota
-        public async Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var mascota = await _context.Mascotas.FindAsync(id);
-            if (mascota != null)
-            {
-                mascota.Activo = false;
-                await _context.SaveChangesAsync();
-            }
+            if (mascota == null || !mascota.Activo) return false;
+
+            mascota.Activo = false;
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

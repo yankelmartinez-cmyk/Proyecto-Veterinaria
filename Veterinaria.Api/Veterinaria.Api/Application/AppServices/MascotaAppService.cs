@@ -1,15 +1,18 @@
-﻿using Veterinaria.Api.Domain.Entities;
-using Veterinaria.Api.Infrastructure.Repositories;
+﻿using Veterinaria.Api.Application.DomainServices;
+using Veterinaria.Api.Domain.Entities;
+using Veterinaria.Api.Domain.Interfaces;
 
 namespace Veterinaria.Api.Application.AppServices
 {
     public class MascotaAppService
     {
-        private readonly MascotaRepository _repository;
+        private readonly IMascotaRepository _repository;
+        private readonly MascotaDomainService _domainService;
 
-        public MascotaAppService(MascotaRepository repository)
+        public MascotaAppService(IMascotaRepository repository, MascotaDomainService domainService)
         {
             _repository = repository;
+            _domainService = domainService;
         }
 
         public async Task<IEnumerable<Mascota>> GetAllAsync()
@@ -22,19 +25,21 @@ namespace Veterinaria.Api.Application.AppServices
             return await _repository.GetByIdAsync(id);
         }
 
-        public async Task AddAsync(Mascota mascota)
+        public async Task<Mascota> CreateAsync(Mascota mascota)
         {
-            await _repository.AddAsync(mascota);
+            _domainService.Validar(mascota);
+            return await _repository.CreateAsync(mascota);
         }
 
-        public async Task UpdateAsync(Mascota mascota)
+        public async Task<Mascota?> UpdateAsync(int id, Mascota mascota)
         {
-            await _repository.UpdateAsync(mascota);
+            _domainService.Validar(mascota);
+            return await _repository.UpdateAsync(id, mascota);
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            await _repository.DeleteAsync(id);
+            return await _repository.DeleteAsync(id);
         }
     }
 }

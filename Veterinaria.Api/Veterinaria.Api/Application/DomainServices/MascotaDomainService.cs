@@ -1,40 +1,19 @@
 ﻿using Veterinaria.Api.Domain.Entities;
-using Veterinaria.Api.Domain.Interfaces;
 
 namespace Veterinaria.Api.Application.DomainServices
 {
     public class MascotaDomainService
     {
-        private readonly IMascotaRepository _repository;
-
-        public MascotaDomainService(IMascotaRepository repository)
+        public void Validar(Mascota mascota)
         {
-            _repository = repository;
-        }
+            if (string.IsNullOrWhiteSpace(mascota.Nombre))
+                throw new ArgumentException("El nombre de la mascota es obligatorio.");
 
-        public async Task<IEnumerable<Mascota>> GetAllAsync()
-        {
-            return await _repository.GetAllAsync();
-        }
+            if (mascota.IdCliente <= 0)
+                throw new ArgumentException("Debe especificar un cliente válido.");
 
-        public async Task<Mascota?> GetByIdAsync(int id)
-        {
-            return await _repository.GetByIdAsync(id);
-        }
-
-        public async Task AddAsync(Mascota mascota)
-        {
-            await _repository.AddAsync(mascota);
-        }
-
-        public async Task UpdateAsync(Mascota mascota)
-        {
-            await _repository.UpdateAsync(mascota);
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            await _repository.DeleteAsync(id);
+            if (mascota.IdTipoMascota <= 0)
+                throw new ArgumentException("Debe especificar un tipo de mascota válido.");
         }
     }
 }
