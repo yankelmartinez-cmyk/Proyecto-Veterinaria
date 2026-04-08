@@ -1,13 +1,14 @@
 ﻿using Veterinaria.Api.Domain.Entities;
+using Veterinaria.Api.Domain.Interfaces;
 using Veterinaria.Api.Infrastructure.Repositories;
 
 namespace Veterinaria.Api.Application.AppServices
 {
     public class MascotaAppService
     {
-        private readonly MascotaRepository _repository;
+        private readonly IMascotaRepository _repository;
 
-        public MascotaAppService(MascotaRepository repository)
+        public MascotaAppService(IMascotaRepository repository)
         {
             _repository = repository;
         }
